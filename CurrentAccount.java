@@ -9,12 +9,14 @@ public class CurrentAccount extends BankAccount{
     }
 
     @Override
-    public void withdraw(int amount){}
-
-
-    
+    public void withdraw(int amount){
+        super.setBalance(super.getBalance() - amount);
+    }
     @Override
     public void displayInfo(){
+        System.out.println("Account name: " + super.getAccountName());
+        System.out.println("Account number: " + super.getAccountNumber());
+        System.out.println("Balance: " + super.getBalance());
 
     }
     
