@@ -1,4 +1,4 @@
-public class BankAccount{
+public abstract class BankAccount{
     private int accountNumber;
     private String accountName;
     private int balance;
@@ -10,6 +10,13 @@ public class BankAccount{
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
+
+    public abstract void withdraw(int amount);
+    public abstract void deposit(int amount);
+    public abstract void displayInfo();
+
+
+
     public void setAccountNumber(int accountNumber){
         this.accountNumber = accountNumber;
     }
