@@ -4,9 +4,19 @@ public class BankAccount{
     private int balance;
 
     public BankAccount() {}
+
     public BankAccount(int accountNumber, String accountName, int balance){
         this.accountName = accountName;
         this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
+    public void setAccountNumber(int accountNumber){
+        this.accountNumber = accountNumber;
+    }
+    public void setAccountName(String accountName){
+        this.accountName = accountName;
+    }
+    public void setBalance(int balance){
         this.balance = balance;
     }
 
