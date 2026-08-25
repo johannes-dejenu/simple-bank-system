@@ -20,6 +20,16 @@ public class BankAccount{
         this.balance = balance;
     }
 
+    public int getAccountNumber(){
+        return this.accountNumber;
+    }
+    public String getAccountName(){
+        return this.accountName;
+    }
+    public int getBalance(){
+        return this.balance;
+    }
+
     
 
 }
