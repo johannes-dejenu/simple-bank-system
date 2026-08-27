@@ -2,14 +2,18 @@ public class SavingsAccount extends BankAccount{
 
 
     @Override
-    public void deposit(int amount){}
+    public void deposit(int amount){
+        super.setBalance(super.getBalance() + amount);
+    }
     @Override
-    public void withdraw(int amount){}
+    public void withdraw(int amount){
+        super.setBalance(super.getBalance() - amount);
+    }
     @Override
-    public void displayInfo(){}
-
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
+    public void displayInfo(){
+        System.out.println("Account Number: " + super.getAccountNumber());
+        System.out.println("Account Name: " + super.getAccountName());
+        System.out.println("Balance: " + super.getBalance());
     }
     
 }
