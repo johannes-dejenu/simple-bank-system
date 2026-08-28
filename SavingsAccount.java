@@ -1,5 +1,8 @@
 public class SavingsAccount extends BankAccount{
 
+    public SavingsAccount(int accountNumber, String accountName, int Balance){
+        super(accountNumber, accountName, Balance);
+    }
 
     @Override
     public void deposit(int amount){
